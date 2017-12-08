@@ -1,0 +1,49 @@
+body {
+	background-image: url(stars1.jpg);
+	background-size: 100%;
+}
+
+.jumbotron { 
+	background-image: url(white.jpg);
+	margin: 100px;
+	border-style: solid;
+	border-color: grey;
+	border-width: 1.5px;
+}
+
+.display-3 {
+	color: red;
+	text-align: center;
+	font-family: times new roman;
+	font-weight: bolder;
+
+
+}
+
+.lead {
+	text-align: center;
+	
+
+}
+
+.questions {
+	text-align: center;
+	font-family: arial;
+	font-weight: normal;
+}
+
+.list li {
+	display: inline;
+}
+
+#b1 {
+	margin-left: 485px;
+}
+
+#timer {
+	text-align: center;
+}
+
+#end {
+	text-align: center;
+}

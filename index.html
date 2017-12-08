@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dallas Stars Trivia</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+</head>
+<body>
+
+	<div class="jumbotron">
+		  	<div class="container">
+		    <h1 class="display-3">Dallas Stars Trivia</h1>
+		    <h3 class="lead">Answer all questions below before time runs out!</h3>
+		  </div>
+			
+			 <input type="button" name="starter" value="Start" onclick="showDiv()" id="b1">
+			
+			<div id="start" style="display: none;">
+			<div id="timer">""</div>
+
+		  	<div class="questions">
+
+		  		<div id="q1">
+		  			<h3>What year did the Stars win the Stanley Cup?</h3>
+		  			<input type="radio" name="question1" value="n"> 2000
+		  			<input type="radio" name="question1" value="y"> 1999
+		  			<input type="radio" name="question1" value="n"> 2002
+		  			<input type="radio" name="question1" value="n"> 1998
+		  		</div>
+
+		  		<div id="q2">
+		  			<h3>Who is not an assistant captain of the 2017/2018 team?</h3>
+		  			<input type="radio" name="question2" value="n"> Tyler Seguin
+		  			<input type="radio" name="question2" value="n"> Alexander Radulov
+		  			<input type="radio" name="question2" value="n"> Jason Spezza
+		  			<input type="radio" name="question2" value="y"> Antoine Roussel
+		  		</div>
+				
+				<div id="q3">
+		  			<h3>How many seasons did Mike Modano play for the Dallas Stars?</h3>
+		  			<input type="radio" name="question3" value="y"> 16
+		  			<input type="radio" name="question3" value="n"> 12
+		  			<input type="radio" name="question3" value="n"> 11
+		  			<input type="radio" name="question3" value="n"> 8
+		  		</div>
+
+		  		<div id="q4">
+		  			<h3>How tall is Ben Bishop?</h3>
+		  			<input type="radio" name="question4" value="y"> 6 ft 7 in
+		  			<input type="radio" name="question4" value="n"> 6 ft 3 in
+		  			<input type="radio" name="question4" value="n"> 5 ft 8 in
+		  			<input type="radio" name="question4" value="n"> 6 ft 5 in
+		  		</div>
+
+		  		<div id="q5">
+		  			<h3>Where is Antoine Roussel from?</h3>
+		  			<input type="radio" name="question5" value="n"> Canada
+		  			<input type="radio" name="question5" value="n"> Russia
+		  			<input type="radio" name="question5" value="n"> Finland
+		  			<input type="radio" name="question5" value="y"> France
+		  		</div>
+
+
+		  		<div id="q6">
+		  			<h3>What year did the Minnesota North Stars become the Dallas Stars?</h3>
+		  			<input type="radio" name="question6" value="n"> 1989
+		  			<input type="radio" name="question6" value="n"> 1991
+		  			<input type="radio" name="question6" value="y"> 1993
+		  			<input type="radio" name="question6" value="n"> 1995
+		  		</div>
+
+		  		<div id="q7">
+		  			<h3>Who was the starting goalie for the Stars the season they won the Stanley Cup?</h3>
+		  			<input type="radio" name="question7" value="n"> Marty Turco
+		  			<input type="radio" name="question7" value="y"> Ed Belfour
+		  			<input type="radio" name="question7" value="n"> Kari Lehtonen
+		  			<input type="radio" name="question7" value="n"> Andy Moog
+		  		</div>
+
+		  		<div id="q8">
+		  			<h3>What does Antoine Roussel call his cat?</h3>
+		  			<input type="radio" name="question8" value="n"> Adeline
+		  			<input type="radio" name="question8" value="n"> Whiskers
+		  			<input type="radio" name="question8" value="n"> Bobby
+		  			<input type="radio" name="question8" value="y"> Minou
+		  		</div>
+
+		  		<div id="q9">
+		  			<h3>What arena do the Stars play at?</h3>
+		  			<input type="radio" name="question9" value="y"> America Airlines Center
+		  			<input type="radio" name="question9" value="n"> Staples Center
+		  			<input type="radio" name="question9" value="n"> Toyota Center
+		  			<input type="radio" name="question9" value="n"> Pepsi Center
+		  		</div>
+
+		  		<div id="q10">
+		  			<h3>Who is the current coach?</h3>
+		  			<input type="radio" name="question10" value="n"> Lindy Ruff
+		  			<input type="radio" name="question10" value="n"> Wayne Gretzky
+		  			<input type="radio" name="question10" value="y"> Ken Hitchcock
+		  			<input type="radio" name="question10" value="n"> Mike Modano
+		  		</div>
+				
+				<br><br>
+
+		  		<input type="submit" name="submit">
+
+
+
+				
+
+		  	</div>
+		  </div>
+
+		  <div id="end" style="display: none;">
+		  	<h2>Times up</h2>
+		  	<p id="right">Correct Answers: </p>
+		  	<p id="wrong">Incorrect Answers: </p>
+		  	<p id="na">Unaswered Questions: </p>
+		  </div>
+
+	</div>
+
+
+
+</body>
+</html>
